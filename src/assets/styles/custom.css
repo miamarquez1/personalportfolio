@@ -29,7 +29,7 @@
 
 /* Navbar Styling */
 .navbar {
-    background-color: #af5bb8 !important; /* Your background color */
+    background-color: hsla(294, 69%, 70%, 0.593) !important; /* Your background color */
 
     /* Use padding-top and padding-bottom for vertical thickness */
     padding-top: 3rem !important;  /* Adjust this value as needed */
@@ -48,7 +48,7 @@
 /* Footer Styling */
 footer { /* Target the footer element */
     /* Change background color - replace #f8f9fa with your desired color */
-    background-color: #af5bb8 !important; /* Light gray example, !important might be needed */
+    background-color: hsla(294, 69%, 70%, 0.593) !important; /* Light gray example, !important might be needed */
 
     /* Optional: Change footer text color if needed */
     /* color: #ffffff; */
