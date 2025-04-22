@@ -8,7 +8,8 @@ import Navbar from 'react-bootstrap/Navbar'; // Use react-bootstrap Navbar
 
 function AppNavbar() { // Renamed to avoid conflict with imported Navbar
   return (
-    <Navbar expand="lg" className="bg-light" sticky="top"> {/* Use react-bootstrap Navbar */}
+    // Removed className="bg-light" here
+    <Navbar expand="lg" sticky="top"> {/* Use react-bootstrap Navbar */}
       <Container fluid> {/* Use Container from react-bootstrap */}
         <Navbar.Brand as={NavLink} to="/">Mia Marquez</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" /> {/* Built-in toggler */}
