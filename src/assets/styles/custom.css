@@ -3,3 +3,21 @@
     color: #007bff;
   }
   
+.home-background {
+
+    background-color: #f8f9fa; /* Fallback color */
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333; /* Adjust text color if background is dark */
+  }
+  
+  .home-background .container {
+     background-color: rgba(255, 255, 255, 0.8); /* Optional: semi-transparent overlay for text readability */
+     padding: 2rem;
+     border-radius: 0.5rem;
+  }
+  
