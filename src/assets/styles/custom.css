@@ -28,11 +28,15 @@
 /* --- New Styles --- */
 
 /* Navbar Styling */
-.navbar { /* Target the navbar element */
-    /* Change background color - replace #343a40 with your desired color */
-    background-color: #af5bb8 !important; /* Dark gray example, !important might be needed to override Bootstrap */
-    padding:5rem;
+.navbar {
+    background-color: #af5bb8 !important; /* Your background color */
+
+    /* Use padding-top and padding-bottom for vertical thickness */
+    padding-top: 3rem !important;  /* Adjust this value as needed */
+    padding-bottom: 3rem !important; /* Adjust this value as needed */
+
 }
+
 
 /* Optional: Change Navbar Link Colors for dark background */
 .navbar .navbar-brand,
