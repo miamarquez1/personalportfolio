@@ -60,9 +60,10 @@ html {
   /* In your custom.css or similar */
 
 .project-card-img {
-    height: 200px; /* Adjust this value as needed */
-    object-fit: cover; /* Scales the image to maintain aspect ratio while filling the element's entire content box. The image will be clipped to fit. */
-    width: 100%; /* Ensure it takes the full width of the card */
+    height: 200px; /* Keep the fixed height (or adjust as needed) */
+    object-fit: contain; /* Change this from 'cover' to 'contain' */
+    width: 100%; /* Keep this to ensure it uses the card width */
+    background-color: #f8f9fa; /* Optional: Add a subtle background color to the image container area */
   }
   
   /* Optional: Ensure buttons align at the bottom if card text length varies */
