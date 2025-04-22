@@ -169,29 +169,31 @@ function Contact() {
         <div>
       {/* ... other contact form elements or text ... */}
 
+      {/* Centered Social Links Section - Place it HERE */}
+      <div className="text-center mt-5"> {/* Added text-center and margin-top */}
+            <h3 className="mb-3">Connect with me:</h3> {/* Moved heading here, added margin-bottom */}
+            <Stack direction="horizontal" gap={3} className="justify-content-center fs-2">
+              <a
+                href="https://github.com/miamarquez1"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub Profile"
+                className="text-dark"
+              >
+                <i className="bi bi-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mia-m-114307293/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn Profile"
+                className="text-dark"
+              >
+                <i className="bi bi-linkedin"></i>
+              </a>
+            </Stack>
+            </div>
       
-      <Stack direction="horizontal" gap={3} className="justify-content-center fs-2"> {/* Adjust fs-2 for icon size */}
-      <h3 className="mt-4">Connect with me:</h3>
-        <a
-          href="https://github.com/miamarquez1"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub Profile"
-          className="text-dark" // Or your desired link color
-        >
-          <i className="bi bi-github"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/mia-m-114307293/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn Profile"
-          className="text-dark" // Or your desired link color
-        >
-          <i className="bi bi-linkedin"></i>
-        </a>
-      </Stack>
-
       {/* ... rest of your component ... */}
     </div>
 
