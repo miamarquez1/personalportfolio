@@ -13,12 +13,12 @@ function Home() {
         animate={{ opacity: 1, y: 0 }}   // Animate to visible and original position
         transition={{ duration: 0.8, delay: 0.2 }} // Animation duration and delay
       >
-        <h1 className="display-4">Welcome to My Portfolio</h1>
-        <p className="lead">I'm <b>Mia Marquez</b>, a Passionate Software Developer.</p>
+        <h1 className="display-4">Hi! I'm Mia Marquez</h1>
+        <p className="lead">Welcome to my portfoilio website. I am a Passionate Software Developer.</p>
         <p>
-          I specialize in building modern, responsive web applications. Explore my work and feel free to get in touch!
+          I specialize in beautiful user-friendly interfaces. Explore my work and feel free to get in touch!
         </p>
-        {/* <Link to="/projects" className="btn btn-primary btn-lg mt-3">View My Work</Link> */}
+        <Link to="./projects" className="btn btn-primary btn-lg mt-3">View My Work</Link>
       </motion.div>
     </div>
   );
