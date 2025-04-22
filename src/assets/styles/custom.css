@@ -5,7 +5,7 @@
 
 
   .home-background {
-    background-color: #f8f9fa; /* Fallback color */
+    background-color: #ffffffcc; /* Fallback color */
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -18,7 +18,7 @@
 }
   
   .home-background .container-fluid {
-    background-color: rgba(255, 255, 255, 0.8); /* Optional overlay */
+    background-color: #ffffffcc; /* Optional overlay */
     padding: 2rem;
     border-radius: 0.5rem;
     /* Ensure the container *can* take full width if its parent allows */
