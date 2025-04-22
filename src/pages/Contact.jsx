@@ -150,7 +150,7 @@ function Contact() {
           <p>
             Email:{' '}
             {/* --- TODO: Replace with your actual email --- */}
-            <a href="mailto:your.email@example.com">your.email@example.com</a>
+            <a href="mailto:marq0325@gmail.com">marq0325@gmail.com</a>
           </p>
           <div>
             <a
