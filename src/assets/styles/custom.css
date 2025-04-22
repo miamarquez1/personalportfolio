@@ -34,7 +34,7 @@
     /* Use padding-top and padding-bottom for vertical thickness */
     padding-top: 1rem !important;  /* Adjust this value as needed */
     padding-bottom: 1.5rem !important; /* Adjust this value as needed */
-
+    color:#ffffff
 }
 
 
@@ -50,7 +50,9 @@ footer { /* Target the footer element */
     /* Change background color - replace #f8f9fa with your desired color */
     background-color: rgb(13, 202, 240) !important; /* Light gray example, !important might be needed */
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    color: #ffffff;
+    text-align: center; /* Center the text */
         /* Optional: Change footer text color if needed */
     /* color: #ffffff; */
 }
