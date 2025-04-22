@@ -7,7 +7,7 @@ function Home() {
     <div className="home-background">
       <div className="container-fluid text-center py-5"> {/* Removed mt-5 as home-background handles centering */}
         <h1 className="display-4">Welcome to My Portfolio</h1>
-        <p className="lead">I'm <b>Mia Marque</b>, a Passionate Software Developer.</p>
+        <p className="lead">I'm <b>Mia Marquez</b>, a Passionate Software Developer.</p>
         <p>
           I specialize in building modern, responsive web applications. Explore my work and feel free to get in touch!
         </p>
