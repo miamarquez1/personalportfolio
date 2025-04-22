@@ -1,6 +1,6 @@
 // /Users/miamarquez/my-portfolio/src/pages/Home.jsx
 import React from 'react';
-import { motion } from 'framer-motion'; // Import motion
+import { motion } from 'framer-motion';
 import '../assets/styles/custom.css';
 
 function Home() {
