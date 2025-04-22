@@ -1,30 +1,37 @@
-import { Link } from 'react-router-dom';
+// /Users/miamarquez/my-portfolio/src/components/Navbar.jsx
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+// Import react-bootstrap components
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar'; // Use react-bootstrap Navbar
 
-function Navbar() {
+function AppNavbar() { // Renamed to avoid conflict with imported Navbar
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light px-4">
-      <Link className="navbar-brand" to="/">My Portfolio</Link>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav ms-auto">
-          <li className="nav-item">
-            <Link className="nav-link" to="/">Home</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/about">About</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/projects">Projects</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <Navbar expand="lg" className="bg-light" sticky="top"> {/* Use react-bootstrap Navbar */}
+      <Container fluid> {/* Use Container from react-bootstrap */}
+        <Navbar.Brand as={NavLink} to="/">Mia Marquez</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" /> {/* Built-in toggler */}
+        <Navbar.Collapse id="basic-navbar-nav"> {/* Built-in collapse behavior */}
+          <Nav className="ms-auto"> {/* Use Nav from react-bootstrap */}
+            {/* Use Nav.Link component which works well with NavLink */}
+            <Nav.Link as={NavLink} to="/" end>
+              Home
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/about">
+              About
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/projects">
+              Projects
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/contact">
+              Contact
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-export default Navbar;
+export default AppNavbar; // Export the renamed component
