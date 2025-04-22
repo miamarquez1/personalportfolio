@@ -128,7 +128,7 @@ function Contact() {
           </p>
           <div>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/miamarquez1"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline-dark m-1"
@@ -136,7 +136,7 @@ function Contact() {
               <i className="bi bi-github"></i> GitHub
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/mia-m-114307293/"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline-primary m-1"
