@@ -1,6 +1,6 @@
 // /Users/miamarquez/my-portfolio/src/App.jsx
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
+import { motion, AnimatePresence } from 'framer-motion'; 
 import Navbar from './components/Navbar'; // Assuming correct path and name
 import Footer from './components/Footer';
 import Home from './pages/Home';

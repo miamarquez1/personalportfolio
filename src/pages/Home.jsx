@@ -1,6 +1,7 @@
 // /Users/miamarquez/my-portfolio/src/pages/Home.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom'; // <-- Import Link here
 import '../assets/styles/custom.css';
 
 function Home() {
@@ -18,7 +19,8 @@ function Home() {
         <p>
           I specialize in beautiful user-friendly interfaces. Explore my work and feel free to get in touch!
         </p>
-        <Link to="./projects" className="btn btn-primary btn-lg mt-3">View My Work</Link>
+        {/* Link component is now defined */}
+        <Link to="/projects" className="btn btn-primary btn-lg mt-3">View My Work</Link>
       </motion.div>
     </div>
   );
