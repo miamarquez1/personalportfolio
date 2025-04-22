@@ -6,18 +6,21 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-// Import Bootstrap CSS globally (usually done in main.jsx/index.js or here)
+// Ensure Bootstrap CSS is imported (usually in main.jsx/index.js or here)
 import 'bootstrap/dist/css/bootstrap.min.css';
 // Import your custom styles AFTER bootstrap
-import './assets/styles/custom.css'; // Make sure path is correct relative to App.jsx
+// Make sure this path is correct relative to App.jsx
+// If custom.css is in src/assets/styles, the path is './assets/styles/custom.css'
+import './assets/styles/custom.css';
 
 function App() {
   return (
-    // Use d-flex flex-column min-vh-100 to ensure footer sticks to bottom
+    // 1. Make this wrapper div a flex column that takes minimum viewport height
     <div className="d-flex flex-column min-vh-100">
       <Navbar />
-      {/* Main content area - should not have width restrictions here */}
-      <main className="flex-grow-1"> {/* flex-grow-1 helps push footer down */}
+
+      {/* 2. Make the <main> element grow to fill available space */}
+      <main className="flex-grow-1">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -26,6 +29,8 @@ function App() {
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </main>
+
+      {/* Footer will be pushed to the bottom */}
       <Footer />
     </div>
   );
