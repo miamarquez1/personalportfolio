@@ -2,18 +2,17 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar'; // Use react-bootstrap Navbar
+import Navbar from 'react-bootstrap/Navbar'; 
 
-function AppNavbar() { // Renamed to avoid conflict with imported Navbar
+function AppNavbar() { 
   return (
-    // Removed className="bg-light" here
-    <Navbar expand="lg" sticky="top"> {/* Use react-bootstrap Navbar */}
-      <Container fluid> {/* Use Container from react-bootstrap */}
+    <Navbar expand="lg" sticky="top"> {}
+      <Container fluid> {}
         <Navbar.Brand as={NavLink} to="/">Mia Marquez</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" /> {/* Built-in toggler */}
-        <Navbar.Collapse id="basic-navbar-nav"> {/* Built-in collapse behavior */}
-          <Nav className="ms-auto"> {/* Use Nav from react-bootstrap */}
-            {/* Use Nav.Link component which works well with NavLink */}
+        <Navbar.Toggle aria-controls="basic-navbar-nav" /> {}
+        <Navbar.Collapse id="basic-navbar-nav"> {}
+          <Nav className="ms-auto"> {}
+            {}
             <Nav.Link as={NavLink} to="/" end>
               Home
             </Nav.Link>
@@ -33,4 +32,4 @@ function AppNavbar() { // Renamed to avoid conflict with imported Navbar
   );
 }
 
-export default AppNavbar; // Export the renamed component
+export default AppNavbar; 

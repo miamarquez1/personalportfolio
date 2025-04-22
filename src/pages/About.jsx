@@ -1,4 +1,3 @@
-// /Users/miamarquez/my-portfolio/src/pages/About.jsx
 import React from 'react';
 
 function About() {
@@ -8,8 +7,6 @@ function About() {
 
       <div className="row">
         <div className="col-lg-8 mx-auto">
-
-          {/* Bio Section */}
           <section className="mb-4">
             <h2>Bio</h2>
             <p>
@@ -21,10 +18,10 @@ function About() {
             </p>
           </section>
 
-          {/* Skills Section - Using Badges */}
+          {}
           <section className="mb-4">
             <h2>Skills</h2>
-            <div className="d-flex flex-wrap gap-2"> {/* Use flexbox for wrapping badges */}
+            <div className="d-flex flex-wrap gap-2"> {}
               <span className="badge bg-primary p-2">HTML</span>
               <span className="badge bg-primary p-2">CSS</span>
               <span className="badge bg-primary p-2">JavaScript</span>
@@ -43,7 +40,7 @@ function About() {
             </div>
           </section>
 
-          {/* Interests Section */}
+          {}
           <section>
             <h2>Interests</h2>
             <p>

@@ -1,4 +1,3 @@
-// /Users/miamarquez/my-portfolio/src/pages/Home.jsx
 import React from 'react';
 // eslint-disable-next-line no-unused-vars -- motion is used via motion.div below
 import { motion } from 'framer-motion';
@@ -21,13 +20,12 @@ function Home() {
       {/* Use variants for cleaner animation definition */}
       <motion.div
         className="container-fluid text-center py-5"
-        variants={containerVariants} // Use variants
-        initial="hidden"           // Reference initial state by name
-        animate="visible"          // Reference animate state by name
-        // The transition is now part of the 'visible' variant
+        variants={containerVariants} 
+        initial="hidden"           
+        animate="visible"         
       >
         <h1 className="display-4">Hi! I'm Mia Marquez</h1>
-        {/* Small typo fix: portfolio */}
+        <br />
         <p className="lead">Welcome to my portfolio website. I am a Passionate Software Developer.</p>
         <p>
           I specialize in beautiful user-friendly interfaces. Explore my work and feel free to get in touch!

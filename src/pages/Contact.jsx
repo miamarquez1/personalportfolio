@@ -1,4 +1,3 @@
-// /Users/miamarquez/my-portfolio/src/pages/Contact.jsx
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -11,8 +10,8 @@ function Contact() {
   });
   const [status, setStatus] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
-  // State to hold validation errors
-  const [errors, setErrors] = useState({}); // <-- Add error state
+
+  const [errors, setErrors] = useState({}); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,13 +19,12 @@ function Contact() {
       ...prevData,
       [name]: value,
     }));
-    // Clear error for the field being edited
+ 
     if (errors[name]) {
       setErrors(prev => ({ ...prev, [name]: null }));
     }
   };
 
-  // --- Enhanced Validation Function ---
   const validateForm = (data) => {
     const newErrors = {};
     if (!data.name) {
@@ -34,7 +32,7 @@ function Contact() {
     }
     if (!data.email) {
       newErrors.email = 'Email is required.';
-    } else if (!/\S+@\S+\.\S+/.test(data.email)) { // Simple email format regex
+    } else if (!/\S+@\S+\.\S+/.test(data.email)) {
       newErrors.email = 'Email address is invalid.';
     }
     if (!data.message) {
@@ -47,7 +45,7 @@ function Contact() {
     e.preventDefault();
     if (isSubmitting) return;
 
-    // Trim data first
+
     const trimmedData = {
       name: formData.name.trim(),
       email: formData.email.trim(),
@@ -55,23 +53,20 @@ function Contact() {
       honeypot: formData.honeypot
     };
 
-    // --- Validate before submitting ---
+
     const validationErrors = validateForm(trimmedData);
     setErrors(validationErrors); // Set errors state
 
-    // Check honeypot
+  
     if (trimmedData.honeypot) {
       setStatus('Possible bot detected. Message not sent.');
-      // Don't set isSubmitting to false here, let validation handle it
     }
 
-    // If there are validation errors (or honeypot filled), stop submission
     if (Object.keys(validationErrors).length > 0 || trimmedData.honeypot) {
-        setStatus('Please correct the errors above.'); // General error status
-        setIsSubmitting(false); // Ensure button is re-enabled if validation fails early
+        setStatus('Please correct the errors above.'); 
+        setIsSubmitting(false); 
         return;
     }
-    // --- End Validation ---
 
 
     setIsSubmitting(true);
@@ -84,8 +79,8 @@ function Contact() {
     try {
       await emailjs.send(serviceId, templateId, trimmedData, publicKey);
       setStatus('Message sent successfully!');
-      setFormData({ name: '', email: '', message: '', honeypot: '' }); // Clear form
-      setErrors({}); // Clear errors on success
+      setFormData({ name: '', email: '', message: '', honeypot: '' }); 
+      setErrors({}); 
     } catch (error) {
       console.error('Error sending email:', error);
       setStatus('Failed to send the message. Please try again.');

@@ -1,13 +1,10 @@
-/* /Users/miamarquez/my-portfolio/src/assets/styles/custom.css */
-
-/* --- Existing Styles --- */
 .nav-link.active {
     font-weight: bold;
-    color: #007bff; /* Example active link color */
+    color: #007bff; /
 }
 
 .home-background {
-    background-color: #ffffffcc; /* Fallback color */
+    background-color: #ffffffcc; 
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -19,55 +16,43 @@
 }
 
 .home-background .container-fluid {
-    background-color: #ffffffcc; /* Optional overlay */
+    background-color: #ffffffcc; 
     padding: 2rem;
     border-radius: 0.5rem;
     width: 100%;
 }
 
-
 .navbar {
-    background-color: rgb(0, 123, 255) !important; /* Custom-defined blue color */
-
-    /* Use padding-top and padding-bottom for vertical thickness */
-    padding-top: 1rem !important;  /* Adjust this value as needed */
-    padding-bottom: 1.5rem !important; /* Adjust this value as needed */
-    color:#ffffff
+    background-color: rgb(0, 123, 255) !important; 
+    padding-top: 1rem !important;  
+    padding-bottom: 1.5rem !important; 
+    color:#ffffff;
 }
 
-
-/* Optional: Change Navbar Link Colors for dark background */
 .navbar .navbar-brand,
 .navbar .nav-link {
-    color: rgba(255, 255, 255, 0.75) !important; /* Lighter text for dark background */
+    color: rgba(255, 255, 255, 0.75) !important; 
 }
 
-
-/* Footer Styling */
-footer { /* Target the footer element */
-    /* Change background color - replace #f8f9fa with your desired color */
-    background-color: rgb(13, 202, 240) !important; /* Light gray example, !important might be needed */
-    padding-top: 1rem;
+footer { 
+    background-color: rgb(13, 202, 240) !important; 
     padding-bottom: 0.75rem;
     color: #ffffff;
-    text-align: center; /* Center the text */
-        /* Optional: Change footer text color if needed */
-    /* color: #ffffff; */
+    text-align: center; 
 }
 html {
     scroll-behavior: smooth;
   }
-  /* In your custom.css or similar */
-
+ 
 .project-card-img {
-    height: 200px; /* Keep the fixed height (or adjust as needed) */
-    object-fit: contain; /* Change this from 'cover' to 'contain' */
-    width: 100%; /* Keep this to ensure it uses the card width */
-    background-color: #f8f9fa; /* Optional: Add a subtle background color to the image container area */
+    height: 200px; 
+    object-fit: contain; 
+    width: 100%; 
+    background-color: #f8f9fa; 
   }
   
-  /* Optional: Ensure buttons align at the bottom if card text length varies */
+
   .card-body.d-flex.flex-column .btn {
-    margin-top: auto; /* Pushes the button to the bottom of the flex container */
+    margin-top: auto; 
   }
   

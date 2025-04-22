@@ -1,4 +1,3 @@
-// /Users/miamarquez/my-portfolio/src/App.jsx
 import { Routes, Route, useLocation } from 'react-router-dom';
 // eslint-disable-next-line no-unused-vars -- motion is used via motion.div below
 import { motion, AnimatePresence } from 'framer-motion';
@@ -8,10 +7,10 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-// ... other imports
+
 
 function App() {
-  const location = useLocation(); // Get location for AnimatePresence key
+  const location = useLocation(); 
 
   const pageVariants = {
     initial: { opacity: 0 },
@@ -29,10 +28,9 @@ function App() {
     <div className="d-flex flex-column min-vh-100">
       <Navbar />
       <main className="flex-grow-1">
-        {/* AnimatePresence handles exit animations */}
+       
         <AnimatePresence mode='wait'>
-          <Routes location={location} key={location.pathname}> {/* Pass location and key */}
-            {/* Wrap each page component in motion.div */}
+          <Routes location={location} key={location.pathname}> 
             <Route path="/" element={
               <motion.div
                 initial="initial"
@@ -77,7 +75,6 @@ function App() {
                 <Contact />
               </motion.div>
             } />
-            {/* Add other routes similarly */}
           </Routes>
         </AnimatePresence>
       </main>
