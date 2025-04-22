@@ -1,8 +1,9 @@
-import React from 'react'; 
+// /Users/miamarquez/my-portfolio/src/pages/Projects.jsx
+import React from 'react';
 
-import todoAppImage from '../assets/img/todo_app_image.png'; // Adjust path if needed
-import exerciseAppImage from '../assets/img/Exercise_App_image.png'; // Adjust path if needed
-import beautyTechImage from '../assets/img/Beauty_Tech_Image.png'; // Adjust path if needed
+import todoAppImage from '../assets/img/todo_app_image.png';
+import exerciseAppImage from '../assets/img/Exercise_App_image.png';
+import beautyTechImage from '../assets/img/Beauty_Tech_Image.png';
 
 function Projects() {
   return (
@@ -12,12 +13,19 @@ function Projects() {
         {/* Project 1 */}
         <div className="col-md-4 mb-4">
           <div className="card h-100">
-            {/* Use the imported image variable */}
-            <img src={todoAppImage} className="card-img-top" alt="Todo App project screenshot" />
-            <div className="card-body">
+            {/* Add the custom class here */}
+            <img
+              src={todoAppImage}
+              className="card-img-top project-card-img" // Added class
+              alt="Todo App project screenshot"
+            />
+            <div className="card-body d-flex flex-column"> {/* Optional: Flex for button alignment */}
               <h5 className="card-title">Todo App</h5>
               <p className="card-text">A simple task-tracking app built with React Native and Expo.</p>
-              <a href="https://miamarquez1.github.io/todo-app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">View on GitHub</a>
+              {/* Optional: mt-auto pushes button to bottom */}
+              <a href="https://miamarquez1.github.io/todo-app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-auto">
+                View on GitHub
+              </a>
             </div>
           </div>
         </div>
@@ -25,12 +33,19 @@ function Projects() {
         {/* Project 2 */}
         <div className="col-md-4 mb-4">
           <div className="card h-100">
-             {/* Use the imported image variable */}
-            <img src={exerciseAppImage} className="card-img-top" alt="Exercise Tracker project screenshot" />
-            <div className="card-body">
+            {/* Add the custom class here */}
+            <img
+              src={exerciseAppImage}
+              className="card-img-top project-card-img" // Added class
+              alt="Exercise Tracker project screenshot"
+            />
+            <div className="card-body d-flex flex-column"> {/* Optional: Flex for button alignment */}
               <h5 className="card-title">Exercise Tracker</h5>
               <p className="card-text">An app that lets users log workouts, reps, and durations.</p>
-              <a href="https://miamarquez1.github.io/react-exercise-app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">View on GitHub</a>
+              {/* Optional: mt-auto pushes button to bottom */}
+              <a href="https://miamarquez1.github.io/react-exercise-app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-auto">
+                View on GitHub
+              </a>
             </div>
           </div>
         </div>
@@ -38,12 +53,19 @@ function Projects() {
         {/* Project 3 */}
         <div className="col-md-4 mb-4">
           <div className="card h-100">
-             {/* Use the imported image variable */}
-            <img src={beautyTechImage} className="card-img-top" alt="BeautyTech App prototype screenshot" />
-            <div className="card-body">
+            {/* Add the custom class here */}
+            <img
+              src={beautyTechImage}
+              className="card-img-top project-card-img" // Added class
+              alt="BeautyTech App prototype screenshot"
+            />
+            <div className="card-body d-flex flex-column"> {/* Optional: Flex for button alignment */}
               <h5 className="card-title">BeautyTech App Prototype</h5>
               <p className="card-text">Booking Service Interactive Prototype.</p>
-              <a href="https://www.figma.com/proto/Ctc4rN6ovDPvAmJ51WoZpY/BeautyTech-High-Fidelity-Design?node-id=29-228&starting-point-node-id=29%3A228" target="_blank" rel="noopener noreferrer" className="btn btn-primary">View on Figma</a>
+              {/* Optional: mt-auto pushes button to bottom */}
+              <a href="https://www.figma.com/proto/Ctc4rN6ovDPvAmJ51WoZpY/BeautyTech-High-Fidelity-Design?node-id=29-228&starting-point-node-id=29%3A228" target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-auto">
+                View on Figma
+              </a>
             </div>
           </div>
         </div>

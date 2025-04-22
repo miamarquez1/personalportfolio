@@ -57,3 +57,16 @@ footer { /* Target the footer element */
 html {
     scroll-behavior: smooth;
   }
+  /* In your custom.css or similar */
+
+.project-card-img {
+    height: 200px; /* Adjust this value as needed */
+    object-fit: cover; /* Scales the image to maintain aspect ratio while filling the element's entire content box. The image will be clipped to fit. */
+    width: 100%; /* Ensure it takes the full width of the card */
+  }
+  
+  /* Optional: Ensure buttons align at the bottom if card text length varies */
+  .card-body.d-flex.flex-column .btn {
+    margin-top: auto; /* Pushes the button to the bottom of the flex container */
+  }
+  
