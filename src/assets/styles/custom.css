@@ -14,7 +14,7 @@
     justify-content: center;
     color: #333;
     /* Ensure home-background itself can span full width if needed */
-    width: 100%;
+    width: 100vw;
 }
   
   .home-background .container-fluid {
