@@ -6,7 +6,7 @@ function Projects() {
         {/* Project 1 */}
         <div className="col-md-4 mb-4">
           <div className="card h-100">
-            <img src="https://via.placeholder.com/300x200" className="card-img-top" alt="Project 1" />
+            <img src="./assets/img/todo_app_image.png" className="card-img-top" alt="Project 1" />
             <div className="card-body">
               <h5 className="card-title">Todo App</h5>
               <p className="card-text">A simple task-tracking app built with React Native and Expo.</p>
@@ -18,11 +18,11 @@ function Projects() {
         {/* Project 2 */}
         <div className="col-md-4 mb-4">
           <div className="card h-100">
-            <img src="https://via.placeholder.com/300x200" className="card-img-top" alt="Project 2" />
+            <img src="./assets/img/Exercise_App_image.png" className="card-img-top" alt="Project 2" />
             <div className="card-body">
               <h5 className="card-title">Exercise Tracker</h5>
               <p className="card-text">An app that lets users log workouts, reps, and durations.</p>
-              <a href="https://github.com/yourusername/exercise-tracker" target="_blank" className="btn btn-primary">View on GitHub</a>
+              <a href="https://miamarquez1.github.io/react-exercise-app/" target="_blank" className="btn btn-primary">View on GitHub</a>
             </div>
           </div>
         </div>
@@ -30,11 +30,11 @@ function Projects() {
         {/* Project 3 */}
         <div className="col-md-4 mb-4">
           <div className="card h-100">
-            <img src="https://via.placeholder.com/300x200" className="card-img-top" alt="Project 3" />
+            <img src="./assets/img/Beauty_Tech_Image.png" className="card-img-top" alt="Project 3" />
             <div className="card-body">
-              <h5 className="card-title">Portfolio Website</h5>
-              <p className="card-text">This website! Built with React, Bootstrap, and React Router.</p>
-              <a href="https://github.com/yourusername/portfolio-site" target="_blank" className="btn btn-primary">View on GitHub</a>
+              <h5 className="card-title">BeautyTech App Prototype</h5>
+              <p className="card-text">Booking Service Interactive Prototype.</p>
+              <a href="https://www.figma.com/proto/Ctc4rN6ovDPvAmJ51WoZpY/BeautyTech-High-Fidelity-Design?node-id=29-228&starting-point-node-id=29%3A228" target="_blank" className="btn btn-primary">View on Figma</a>
             </div>
           </div>
         </div>
