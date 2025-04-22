@@ -10,7 +10,7 @@ function Projects() {
             <div className="card-body">
               <h5 className="card-title">Todo App</h5>
               <p className="card-text">A simple task-tracking app built with React Native and Expo.</p>
-              <a href="https://github.com/yourusername/todo-app" target="_blank" className="btn btn-primary">View on GitHub</a>
+              <a href="https://miamarquez1.github.io/todo-app/" target="_blank" className="btn btn-primary">View on GitHub</a>
             </div>
           </div>
         </div>

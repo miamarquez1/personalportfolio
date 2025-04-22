@@ -13,7 +13,11 @@ function About() {
           <section className="mb-4">
             <h2>Bio</h2>
             <p>
-              Hi! I'm Mia Marquez — a Digital Media major at the University of Central Florida, passionate about user-centered design and front-end development. I'm fluent in both Spanish and English, and I thrive in fast-paced, collaborative environments that embrace feedback and creativity. I'm currently part of multiple design and coding organizations where I expand my UX/UI and web dev skills through hands-on projects.
+              Hi! I'm Mia Marquez — a Digital Media major at the University of Central Florida. I am very
+              passionate about user-centered design and front-end development. I thrive in 
+              creative environments and love to design aesthetically pleasing and functional projects that everyone can enjoy.
+               I'm currently part of multiple design and coding organizations where 
+               I expand my UX/UI and web dev skills through hands-on projects. This includes Design and Code UCF and Girls Who Code.
             </p>
           </section>
 
@@ -44,8 +48,7 @@ function About() {
             <h2>Interests</h2>
             <p>
               I'm especially interested in UX/UI design, accessible web development, and using design to tell digital stories. 
-              I love working with like-minded peers through clubs like Girls Who Code and Design and Code UCF. Outside of tech, 
-              I’m inspired by fashion, creativity, and building inclusive spaces for women in tech.
+              Outside of tech, I’m inspired by fashion, art, and building inclusive spaces for women in tech.
             </p>
           </section>
 
