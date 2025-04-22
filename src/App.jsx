@@ -10,13 +10,14 @@ function App() {
   return (
     <>
       <Navbar />
+      <div className="container mt-5">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-   
+        </div>
       <Footer />
     </>
   );
