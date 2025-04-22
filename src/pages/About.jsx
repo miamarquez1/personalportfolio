@@ -43,7 +43,9 @@ function About() {
           <section>
             <h2>Interests</h2>
             <p>
-              I'm especially interested in UX/UI design, accessible web development, and using design to tell digital stories. I love working with like-minded peers through clubs like Girls Who Code and Design and Code UCF, and I enjoy designing for communities — like building a website for the Fashion Society at UCF. Outside of tech, I’m inspired by fashion, creativity, and building inclusive spaces for women in tech.
+              I'm especially interested in UX/UI design, accessible web development, and using design to tell digital stories. 
+              I love working with like-minded peers through clubs like Girls Who Code and Design and Code UCF. Outside of tech, 
+              I’m inspired by fashion, creativity, and building inclusive spaces for women in tech.
             </p>
           </section>
 

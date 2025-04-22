@@ -25,11 +25,9 @@
     width: 100%;
 }
 
-/* --- New Styles --- */
 
-/* Navbar Styling */
 .navbar {
-    background-color: rgb(13, 202, 240) !important; /* Your background color */
+    background-color: rgb(0, 123, 255) !important; /* Custom-defined blue color */
 
     /* Use padding-top and padding-bottom for vertical thickness */
     padding-top: 1rem !important;  /* Adjust this value as needed */
@@ -56,3 +54,6 @@ footer { /* Target the footer element */
         /* Optional: Change footer text color if needed */
     /* color: #ffffff; */
 }
+html {
+    scroll-behavior: smooth;
+  }
