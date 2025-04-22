@@ -33,7 +33,7 @@
 
     /* Use padding-top and padding-bottom for vertical thickness */
     padding-top: 1rem !important;  /* Adjust this value as needed */
-    padding-bottom: 2rem !important; /* Adjust this value as needed */
+    padding-bottom: 1.5rem !important; /* Adjust this value as needed */
 
 }
 
@@ -49,7 +49,8 @@
 footer { /* Target the footer element */
     /* Change background color - replace #f8f9fa with your desired color */
     background-color: hsla(294, 52%, 41%, 0.714) !important; /* Light gray example, !important might be needed */
-
-    /* Optional: Change footer text color if needed */
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+        /* Optional: Change footer text color if needed */
     /* color: #ffffff; */
 }
