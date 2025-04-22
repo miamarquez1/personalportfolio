@@ -169,8 +169,9 @@ function Contact() {
         <div>
       {/* ... other contact form elements or text ... */}
 
-      <h4 className="mt-4">Connect with me:</h4>
+      
       <Stack direction="horizontal" gap={3} className="justify-content-center fs-2"> {/* Adjust fs-2 for icon size */}
+      <h3 className="mt-4">Connect with me:</h3>
         <a
           href="https://github.com/miamarquez1"
           target="_blank"
