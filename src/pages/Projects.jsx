@@ -1,6 +1,5 @@
-import React from 'react'; // Make sure React is imported if not already
+import React from 'react'; 
 
-// Import the images
 import todoAppImage from '../assets/img/todo_app_image.png'; // Adjust path if needed
 import exerciseAppImage from '../assets/img/Exercise_App_image.png'; // Adjust path if needed
 import beautyTechImage from '../assets/img/Beauty_Tech_Image.png'; // Adjust path if needed

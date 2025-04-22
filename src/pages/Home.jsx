@@ -1,25 +1,37 @@
 // /Users/miamarquez/my-portfolio/src/pages/Home.jsx
 import React from 'react';
+// eslint-disable-next-line no-unused-vars -- motion is used via motion.div below
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom'; // <-- Import Link here
+import { Link } from 'react-router-dom';
 import '../assets/styles/custom.css';
 
 function Home() {
+  // Animation variants can make the motion props cleaner
+  const containerVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, delay: 0.2 }
+    }
+  };
+
   return (
     <div className="home-background">
-      {/* Wrap the content container with motion.div */}
+      {/* Use variants for cleaner animation definition */}
       <motion.div
         className="container-fluid text-center py-5"
-        initial={{ opacity: 0, y: 20 }} // Start invisible and slightly down
-        animate={{ opacity: 1, y: 0 }}   // Animate to visible and original position
-        transition={{ duration: 0.8, delay: 0.2 }} // Animation duration and delay
+        variants={containerVariants} // Use variants
+        initial="hidden"           // Reference initial state by name
+        animate="visible"          // Reference animate state by name
+        // The transition is now part of the 'visible' variant
       >
         <h1 className="display-4">Hi! I'm Mia Marquez</h1>
-        <p className="lead">Welcome to my portfoilio website. I am a Passionate Software Developer.</p>
+        {/* Small typo fix: portfolio */}
+        <p className="lead">Welcome to my portfolio website. I am a Passionate Software Developer.</p>
         <p>
           I specialize in beautiful user-friendly interfaces. Explore my work and feel free to get in touch!
         </p>
-        {/* Link component is now defined */}
         <Link to="/projects" className="btn btn-primary btn-lg mt-3">View My Work</Link>
       </motion.div>
     </div>

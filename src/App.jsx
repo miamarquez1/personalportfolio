@@ -1,6 +1,7 @@
 // /Users/miamarquez/my-portfolio/src/App.jsx
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion'; 
+// eslint-disable-next-line no-unused-vars -- motion is used via motion.div below
+import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar'; // Assuming correct path and name
 import Footer from './components/Footer';
 import Home from './pages/Home';
