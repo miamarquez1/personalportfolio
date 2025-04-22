@@ -1,13 +1,25 @@
+// src/main.jsx or src/index.js (adjust filename as needed)
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import App from './App.jsx';
-import './index.css';
+// 1. Import HashRouter instead of BrowserRouter
+import { HashRouter } from 'react-router-dom';
+import App from './App';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+// Import Bootstrap CSS (if not already done in App.jsx)
+import 'bootstrap/dist/css/bootstrap.min.css';
+// Import Bootstrap Icons CSS (if you're using them)
+import 'bootstrap-icons/font/bootstrap-icons.css';
+// Import your custom CSS AFTER Bootstrap
+import './assets/styles/custom.css'; // Adjust path if needed
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/personalportfolio">
+    {/* 2. Use HashRouter here */}
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
+
