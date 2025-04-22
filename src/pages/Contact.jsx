@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { Stack } from 'react-bootstrap';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -165,10 +166,39 @@ function Contact() {
             </div>
           </form>
         </div>
-      </div>
-      {/* Contact Details Section */}
-      {/* ... rest of the component ... */}
+        <div>
+      {/* ... other contact form elements or text ... */}
+
+      <h4 className="mt-4">Connect with me:</h4>
+      <Stack direction="horizontal" gap={3} className="justify-content-center fs-2"> {/* Adjust fs-2 for icon size */}
+        <a
+          href="https://github.com/miamarquez1"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub Profile"
+          className="text-dark" // Or your desired link color
+        >
+          <i className="bi bi-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/mia-m-114307293/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn Profile"
+          className="text-dark" // Or your desired link color
+        >
+          <i className="bi bi-linkedin"></i>
+        </a>
+      </Stack>
+
+      {/* ... rest of your component ... */}
     </div>
+
+      </div>
+
+    </div>
+
+
   );
 }
 
