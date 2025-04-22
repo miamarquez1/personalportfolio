@@ -32,8 +32,8 @@
     background-color: hsla(294, 52%, 41%, 0.714) !important; /* Your background color */
 
     /* Use padding-top and padding-bottom for vertical thickness */
-    padding-top: 3rem !important;  /* Adjust this value as needed */
-    padding-bottom: 3rem !important; /* Adjust this value as needed */
+    padding-top: 1rem !important;  /* Adjust this value as needed */
+    padding-bottom: 2rem !important; /* Adjust this value as needed */
 
 }
 
