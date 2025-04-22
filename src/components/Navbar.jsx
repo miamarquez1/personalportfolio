@@ -1,7 +1,5 @@
-// /Users/miamarquez/my-portfolio/src/components/Navbar.jsx
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// Import react-bootstrap components
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar'; // Use react-bootstrap Navbar

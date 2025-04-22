@@ -1,3 +1,10 @@
+import React from 'react'; // Make sure React is imported if not already
+
+// Import the images
+import todoAppImage from '../assets/img/todo_app_image.png'; // Adjust path if needed
+import exerciseAppImage from '../assets/img/Exercise_App_image.png'; // Adjust path if needed
+import beautyTechImage from '../assets/img/Beauty_Tech_Image.png'; // Adjust path if needed
+
 function Projects() {
   return (
     <div className="container my-5">
@@ -6,11 +13,12 @@ function Projects() {
         {/* Project 1 */}
         <div className="col-md-4 mb-4">
           <div className="card h-100">
-            <img src="./assets/img/todo_app_image.png" className="card-img-top" alt="Project 1" />
+            {/* Use the imported image variable */}
+            <img src={todoAppImage} className="card-img-top" alt="Todo App project screenshot" />
             <div className="card-body">
               <h5 className="card-title">Todo App</h5>
               <p className="card-text">A simple task-tracking app built with React Native and Expo.</p>
-              <a href="https://miamarquez1.github.io/todo-app/" target="_blank" className="btn btn-primary">View on GitHub</a>
+              <a href="https://miamarquez1.github.io/todo-app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">View on GitHub</a>
             </div>
           </div>
         </div>
@@ -18,11 +26,12 @@ function Projects() {
         {/* Project 2 */}
         <div className="col-md-4 mb-4">
           <div className="card h-100">
-            <img src="./assets/img/Exercise_App_image.png" className="card-img-top" alt="Project 2" />
+             {/* Use the imported image variable */}
+            <img src={exerciseAppImage} className="card-img-top" alt="Exercise Tracker project screenshot" />
             <div className="card-body">
               <h5 className="card-title">Exercise Tracker</h5>
               <p className="card-text">An app that lets users log workouts, reps, and durations.</p>
-              <a href="https://miamarquez1.github.io/react-exercise-app/" target="_blank" className="btn btn-primary">View on GitHub</a>
+              <a href="https://miamarquez1.github.io/react-exercise-app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">View on GitHub</a>
             </div>
           </div>
         </div>
@@ -30,11 +39,12 @@ function Projects() {
         {/* Project 3 */}
         <div className="col-md-4 mb-4">
           <div className="card h-100">
-            <img src="./assets/img/Beauty_Tech_Image.png" className="card-img-top" alt="Project 3" />
+             {/* Use the imported image variable */}
+            <img src={beautyTechImage} className="card-img-top" alt="BeautyTech App prototype screenshot" />
             <div className="card-body">
               <h5 className="card-title">BeautyTech App Prototype</h5>
               <p className="card-text">Booking Service Interactive Prototype.</p>
-              <a href="https://www.figma.com/proto/Ctc4rN6ovDPvAmJ51WoZpY/BeautyTech-High-Fidelity-Design?node-id=29-228&starting-point-node-id=29%3A228" target="_blank" className="btn btn-primary">View on Figma</a>
+              <a href="https://www.figma.com/proto/Ctc4rN6ovDPvAmJ51WoZpY/BeautyTech-High-Fidelity-Design?node-id=29-228&starting-point-node-id=29%3A228" target="_blank" rel="noopener noreferrer" className="btn btn-primary">View on Figma</a>
             </div>
           </div>
         </div>
