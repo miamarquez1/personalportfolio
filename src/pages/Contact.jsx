@@ -169,9 +169,9 @@ function Contact() {
         <div>
       {/* ... other contact form elements or text ... */}
 
-      {/* Centered Social Links Section - Place it HERE */}
-      <div className="text-center mt-5"> {/* Added text-center and margin-top */}
-            <h3 className="mb-3">Connect with me:</h3> {/* Moved heading here, added margin-bottom */}
+      
+      <div className="text-center mt-5"> 
+            <h3 className="mb-3">Connect with me:</h3> 
             <Stack direction="horizontal" gap={3} className="justify-content-center fs-2">
               <a
                 href="https://github.com/miamarquez1"
