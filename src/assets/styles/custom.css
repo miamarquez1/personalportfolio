@@ -30,11 +30,8 @@
 /* Navbar Styling */
 .navbar { /* Target the navbar element */
     /* Change background color - replace #343a40 with your desired color */
-    background-color: #343a40 !important; /* Dark gray example, !important might be needed to override Bootstrap */
-
-    /* Make navbar thicker by increasing vertical padding */
-    padding-top: 1rem;    /* Adjust value as needed */
-    padding-bottom: 1rem; /* Adjust value as needed */
+    background-color: #af5bb8 !important; /* Dark gray example, !important might be needed to override Bootstrap */
+    padding:5rem;
 }
 
 /* Optional: Change Navbar Link Colors for dark background */
@@ -47,7 +44,7 @@
 /* Footer Styling */
 footer { /* Target the footer element */
     /* Change background color - replace #f8f9fa with your desired color */
-    background-color: #f8f9fa !important; /* Light gray example, !important might be needed */
+    background-color: #af5bb8 !important; /* Light gray example, !important might be needed */
 
     /* Optional: Change footer text color if needed */
     /* color: #ffffff; */
