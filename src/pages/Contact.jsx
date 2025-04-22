@@ -6,41 +6,59 @@ function Contact() {
     name: '',
     email: '',
     message: '',
-    honeypot: '', // Add honeypot field to the initial state
+    honeypot: '',
   });
   const [status, setStatus] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false); // To prevent multiple submissions
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
+  // --- Updated handleChange ---
   const handleChange = (e) => {
-      const { name, value } = e.target;
-      setFormData((prevData) => ({
-          ...prevData,
-          [name]: value.trim(), // Trim input to avoid leading/trailing spaces
-      }));
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value, // Removed .trim() here
+    }));
   };
 
+  // --- Updated handleSubmit ---
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (isSubmitting) return; // Prevent multiple submissions
+    if (isSubmitting) return;
     setIsSubmitting(true);
-    setStatus('Sending...'); // Update status to indicate sending
+    setStatus('Sending...');
 
-    if (formData.honeypot) {
+    // Trim the data *before* validation or sending
+    const trimmedData = {
+      name: formData.name.trim(),
+      email: formData.email.trim(), // Keep trimming email just in case
+      message: formData.message.trim(),
+      honeypot: formData.honeypot // No need to trim honeypot
+    };
+
+    // Check honeypot first
+    if (trimmedData.honeypot) {
       setStatus('Possible bot detected. Message not sent.');
       setIsSubmitting(false);
       return;
     }
 
-    const serviceId = 'service_7mgsokk'; // Replace with your service ID
-    const templateId = 'template_u4rvawk'; // Replace with your template ID
-    const publicKey = 'xBUahXeAWgMCp8V1m'; // Replace with your public key
+    // Basic validation on trimmed data
+    if (!trimmedData.name || !trimmedData.email || !trimmedData.message) {
+      setStatus('Please fill out all required fields.');
+      setIsSubmitting(false); // Stop submission if validation fails
+      return;
+    }
+
+    const serviceId = 'service_7mgsokk';
+    const templateId = 'template_u4rvawk';
+    const publicKey = 'xBUahXeAWgMCp8V1m';
 
     try {
       await emailjs.send(
         serviceId,
         templateId,
-        formData,
+        trimmedData, // Send the trimmed data object
         publicKey
       );
       setStatus('Message sent successfully!');
@@ -49,10 +67,11 @@ function Contact() {
       console.error('Error sending email:', error);
       setStatus('Failed to send the message. Please try again.');
     } finally {
-      setIsSubmitting(false); // Allow submissions again
+      setIsSubmitting(false);
     }
   };
 
+  // --- JSX remains the same ---
   return (
     <div className="container-fluid my-5 px-md-5">
       <h1 className="text-center mb-4">Get in Touch</h1>
@@ -60,10 +79,12 @@ function Contact() {
         <div className="col-md-8 mx-auto mb-5">
           <h2 className="h4 mb-3 text-center">Reach Out to Me</h2>
           <form onSubmit={handleSubmit}>
+            {/* Honeypot field */}
             <div style={{ position: 'absolute', left: '-9999px' }}>
               <label htmlFor="honeypot">Don't fill this out:</label>
-              <input type="text" id="honeypot" name="honeypot" onChange={handleChange} />
+              <input type="text" id="honeypot" name="honeypot" value={formData.honeypot} onChange={handleChange} tabIndex="-1" autoComplete="off" />
             </div>
+            {/* Name field */}
             <div className="mb-3">
               <label htmlFor="name" className="form-label">Your Name</label>
               <input
@@ -76,6 +97,7 @@ function Contact() {
                 required
               />
             </div>
+            {/* Email field */}
             <div className="mb-3">
               <label htmlFor="email" className="form-label">Email address</label>
               <input
@@ -88,6 +110,7 @@ function Contact() {
                 required
               />
             </div>
+            {/* Message field */}
             <div className="mb-3">
               <label htmlFor="message" className="form-label">Message</label>
               <textarea
@@ -100,6 +123,7 @@ function Contact() {
                 required
               ></textarea>
             </div>
+            {/* Status message */}
             {status && (
               <p
                 className={`mb-3 text-center ${
@@ -109,6 +133,7 @@ function Contact() {
                 {status}
               </p>
             )}
+            {/* Submit button */}
             <div className="text-center">
               <button type="submit" className="btn btn-primary" disabled={isSubmitting}>
                 {isSubmitting ? 'Sending...' : 'Send Message'}
@@ -118,12 +143,13 @@ function Contact() {
         </div>
       </div>
 
+      {/* Contact Details Section */}
       <div className="row">
-        {/* Contact Details & Social Links Column - Add mx-auto */}
         <div className="col-md-8 mx-auto text-center">
           <h2 className="h4 mb-3">Or find me here</h2>
           <p>
             Email:{' '}
+            {/* --- TODO: Replace with your actual email --- */}
             <a href="mailto:your.email@example.com">your.email@example.com</a>
           </p>
           <div>
