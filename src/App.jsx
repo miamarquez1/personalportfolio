@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -7,9 +7,8 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
 function App() {
-  console.log("App component loaded!");
   return (
-    <>
+    <BrowserRouter basename="/personalportfolio">
       <Navbar />
       <div className="container mt-5">
         <Routes>
@@ -20,7 +19,7 @@ function App() {
         </Routes>
       </div>
       <Footer />
-      </>
+    </BrowserRouter>
   );
 }
 
